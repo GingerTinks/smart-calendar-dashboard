@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Calendar Dashboard</title>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <ul>
+    {% for event in events %}
+        <li><strong>{{ event.date }}</strong>: {{ event.event }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
